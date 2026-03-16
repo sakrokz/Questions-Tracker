@@ -1,0 +1,214 @@
+
+
+
+body{
+font-family:'quicksand';
+text-align:center;
+background:#16262e;
+margin-top:60px;
+color: white;
+
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+button{
+padding:14px 30px;
+margin:10px;
+font-size:17px;
+border:none;
+border-radius:10px;
+background:#007bff;
+color:white;
+cursor:pointer;
+
+/* smooth transition */
+transition: background-color 0.35s ease, transform 0.35s ease;
+}
+
+/* hover effect */
+
+button:hover{
+
+background:#0062cc;   /* slightly darker blue */
+
+transform:scale(1.06); /* slightly bigger */
+
+}
+
+#counterPage,#bulkPage,#historyPage{
+display:none;
+}
+
+#count{
+font-size:100px;
+margin:20px;
+font-family: 'Wellfleet';
+cursor: pointer;
+display: inline-block;
+
+transition: color 0.3s ease, transform 0.15s ease;
+}
+
+#count:hover{
+    color: #d6bf3c;
+    transform: scale(1.05);
+}
+
+
+.progress-container{
+width:60%;
+margin:auto;
+background:#2a3e47;
+border-radius:10px;
+height:30px;
+}
+
+.progress-bar{
+height:100%;
+width:0%;
+background:#28a745;
+border-radius:10px;
+
+transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+#progressText{
+font-size:14px;
+font-weight:600;
+color:white;
+}
+
+input{
+padding:8px;
+font-size:16px;
+}
+
+.history-entry{
+background:#223843;
+margin:5px auto;
+width:350px;
+padding:10px;
+border-radius:6px;
+color:white;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:6px;
+}
+
+/*
+.history-entry, .historyNumber, .history-entry input{
+
+}
+*/
+
+.history-entry{
+font-size:25px;
+}
+
+.historyNumber{
+font-weight:900;
+font-size: 25px;
+}
+
+.history-entry input{
+height:20px;
+width:70px;
+text-align:center;
+font-size:12px;
+margin-top: 30px;
+}
+
+input{
+    padding:10px 15px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    text-align:center;
+    height: 30px;
+}
+
+#totalSection{
+margin-top:60px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+#totalCount, #totalLabel, #soFarText{
+color: #c9c9c9;
+font-weight: 900;
+font-family: "wellfleet";
+}
+
+#totalCount{
+font-size:160px;
+font-weight:bold;
+font-variant-numeric: tabular-nums;
+color: #f1c40f;
+}
+
+#totalLabel{
+font-size:38px;
+opacity:0.8;
+margin-top:5px;
+}
+
+#soFarText{
+font-size:38px;
+opacity:0.8;
+margin-bottom:8px;
+}
+
+#targetDisplay{
+
+display:inline-block;
+margin-top:12px;
+
+padding:8px 18px;
+
+font-size:22px;
+font-weight:600;
+
+background:#2ecc71;
+color:#16262e;
+height: 35px;
+
+border-radius:8px;
+font-family: 'BOrel';
+
+}
+
+.history-entry:first-child{
+background:#1f353f;
+padding:6px;
+border-radius:6px;
+}
+
+#avgBox{
+margin-top:10px;
+font-size:25px;
+color: #f1c40f;
+}
+
+#avgCount{
+font-weight:700;
+}
+
+#footu{
+position: fixed;
+bottom: 30px;
+right: 30px;
+font-weight: 400;
+}
+
+

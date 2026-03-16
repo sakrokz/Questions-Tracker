@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Question Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div id="home">
+
+<h1>Question Tracker</h1>
+
+<button onclick="showCounter()">Start Counter</button>
+<button onclick="showBulk()">Bulk Add</button>
+<button onclick="showHistory()">Daily History</button>
+
+<div id="totalSection">
+
+<p id="soFarText">So Far</p>
+
+<div id="totalCount">0</div>
+
+<p id="totalLabel">Questions Solved</p>
+
+</div>
+
+</div>
+
+<div id="avgBox">
+Average per day: <span id="avgCount">0</span>
+</div>
+
+<div id="counterPage">
+
+<h2>Questions Solved Today</h2>
+
+<div id="count">0</div>
+
+<p>Press SPACEBAR or CLICK to add</p>
+
+<h3>Daily Target</h3>
+
+<input id="targetInput" type="number" placeholder="Set target">
+<button onclick="setTarget()">Set</button>
+
+<p id="targetDisplay"></p>
+
+<div class="progress-container">
+<div id="progressBar" class="progress-bar">
+<span id="progressText">0 / 0</span>
+</div>
+</div>
+
+<br>
+
+<button onclick="undo()">Undo</button>
+<button onclick="resetTarget()">Reset Target</button>
+<button onclick="goHome()">Back</button>
+
+</div>
+
+
+<div id="bulkPage">
+
+<h2>Bulk Add</h2>
+
+<input id="bulkInput" type="number" placeholder="Enter number">
+
+<br><br>
+
+<button onclick="addBulk()">Add</button>
+<button onclick="goHome()">Back</button>
+
+</div>
+
+
+<div id="historyPage">
+
+<h2>Daily History</h2>
+
+<div id="historyList"></div>
+
+<br>
+
+<button onclick="goHome()">Back</button>
+
+
+
+</div>
+
+
+<div id="footu">Made by Haroon Kabeer</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
